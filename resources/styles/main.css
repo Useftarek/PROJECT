@@ -148,7 +148,7 @@ section {
   display: block;
   height: 42px;
   width: 40px;
- top: calc(80% - 25px);;
+  top: calc(80% - 25px);;
 }
 
 .hero-section .center .related {
@@ -161,12 +161,12 @@ section {
   line-height: 42px;
   background-color: #ffffff;
   position: fixed;
-  right0px;
+  right:0;
   letter-spacing: .11em;
   display: block;
   height: 42px;
-  width: 40px;
- top: calc(85% - 20px);;
+  width: 40px;            
+  top: calc(85% - 20px);
 }
 
 .hero-section .center .related2 {
@@ -238,31 +238,23 @@ section {
   right: 100px;
 }
 
-.scroll .right:hover {
-  font-size: 30px;
-  color: #ffffff;
-  background: #111;
-  border: 2px solid #1d1d1d;
-  border-radius: 50px;
-  padding: 12px 12px;
-  transition: 0.5s all;
+.scroll .right  , .left  {
+ border-radius: 50%;
+ padding: 5px;
+ transition: 0.41s all ease;
+}
+.scroll .right:hover , .left:hover {
+  background: #1d1d1d;
+  color: #fff;
+  transition: 0.5s;
 }
 
-.scroll .left:hover {
-  font-size: 30px;
-  color: #ffffff;
-  background: #111;
-  border: 2px solid #1d1d1d;
-  border-radius: 50px;
-  padding: 12px 12px;
-  transition: 0.5s all;
-}
 .loader {
   position: absolute;
   bottom: 100px;
   width: 300px;
   height: 2px;
-  background: #ffffff57;
+  background: #fff;
   border-radius: 99px;
 }
 
@@ -429,6 +421,7 @@ section {
 }
 .products-section .container .box-container .box {
   outline: 1px solid #d9d9d9;
+  border: 3px solid transparent;
 }
 
 .products-section .container .box-container .box img {
@@ -511,7 +504,7 @@ section {
 
 .products-section .container .box-container .box:hover {
   border: 3px solid #111;
-  transition: 0.1.5s ease;
+  transition: 0.15s ease;
 }
 
 /* end Products section */
@@ -659,6 +652,9 @@ section {
 
 .New-Collections .container .box-container .text-box .move {
   font-size: 18px;
+  & i {
+    cursor: pointer;
+  }
 }
 
 /* end collection-section */
@@ -1422,6 +1418,10 @@ input:hover::placeholder {
   .hero-section {
     background-position: right;
     background-size: cover;
+  }
+
+ .main-btn {
+    padding: 30px 50px;
   }
 
   .scroll {
